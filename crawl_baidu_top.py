@@ -49,7 +49,6 @@ if __name__ == '__main__':
     date_str = now.strftime('%Y%m%d')
     os.makedirs(year_str, exist_ok=True)
     filename = os.path.join(year_str, '{} 百度实时热点.json'.format(date_str))
-    
     titles, hot_indices = crawl_baidu_top()
     records = list(zip(titles, hot_indices))
     save_as_json(filename, records)
