@@ -52,3 +52,6 @@ if __name__ == '__main__':
     titles, hot_indices = crawl_baidu_top()
     records = list(zip(titles, hot_indices))
     save_as_json(filename, records)
+    #保存目标数据
+
+
